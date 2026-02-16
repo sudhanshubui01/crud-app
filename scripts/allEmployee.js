@@ -55,7 +55,7 @@ function displayEmployees(allEmployees) {
     </section>
     `;
     // apply click event in deleteBTN
-    const deleteBtn = emp.card.querySelector(".delete-btn");
+    const deleteBtn = empCard.querySelector(".delete-btn");
     deleteBtn.addEventListener("click", () => {
       handleDelete(id);
     });
@@ -68,19 +68,26 @@ function displayEmployees(allEmployees) {
   });
 }
 
-// async function handleDelete(id) {
-//   console.log(id)
+async function handleDelete(id) {
+  try {
+    let resp = await fetch(
+      `https://crud-app-js-xw67.onrender.com/employees/${id}`,
+      { method: "DELETE" },
+    );
 
-//   try{
-//     let resp= await fetch(`https://localhost:5000/employee/${id}`,{
-//       method: 'DELETE',
-//     })
-//     console.log(resp)
-//   }
-// }
+    if (!resp.ok) {
+      throw new Error("Delete failed");
+    }
 
+    alert("Employee deleted ✅");
+    employeesContainerEle.innerHTML = "";
+    getAllEmployees();
+  } catch (error) {
+    console.log(error);
+    alert("Unable to delete ❌");
+  }
+}
 
-// async function handleEdit(id){
-// window.location.href=`EditEmployee.html?id=${}`
-// }
-
+function handleEdit(id) {
+  window.location.href = `EditEmployee.html?id=${id}`;
+}
