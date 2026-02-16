@@ -1,0 +1,106 @@
+{
+  "employee": [
+    {
+      "id": "72b9",
+      "firstname": "Ankit",
+      "middlename": "Kumar",
+      "lastname": "Verma",
+      "dob": "2003-08-01",
+      "email": "ankit@gmail.com",
+      "maritalstatus": "Single",
+      "phoneno": "6307557090",
+      "address": {
+        "street": "Noida",
+        "city": "Noida",
+        "state": "UP",
+        "country": "India",
+        "zipcode": "201003"
+      }
+    },
+    {
+      "id": "c5d6",
+      "firstname": "Sudhanshu",
+      "middlename": "Kumar",
+      "lastname": "Verma",
+      "dob": "2003-02-15",
+      "email": "sudhanshu@gmail.com",
+      "maritalstatus": "Single",
+      "phoneno": "6307557090",
+      "address": {
+        "street": "Noida",
+        "city": "Noida",
+        "state": "UP",
+        "country": "India",
+        "zipcode": "213000"
+      }
+    },
+    {
+      "id": "0ab0",
+      "firstname": "",
+      "middlename": "",
+      "lastname": "",
+      "dob": "",
+      "email": "",
+      "maritalstatus": "",
+      "phoneno": "",
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "",
+        "zipcode": ""
+      }
+    },
+    {
+      "id": "4414",
+      "firstname": "",
+      "middlename": "",
+      "lastname": "",
+      "dob": "",
+      "email": "",
+      "maritalstatus": "",
+      "phoneno": "",
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "",
+        "zipcode": ""
+      }
+    },
+    {
+      "id": "efd7",
+      "firstname": "",
+      "middlename": "",
+      "lastname": "",
+      "dob": "",
+      "email": "",
+      "maritalstatus": "",
+      "phoneno": "",
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "",
+        "zipcode": ""
+      }
+    },
+    {
+      "id": "fa5c",
+      "firstname": "ANkit",
+      "middlename": "ahf",
+      "lastname": "hju",
+      "dob": "6064-05-05",
+      "email": "ljbou@gmail.com",
+      "maritalstatus": "Married",
+      "phoneno": "46824",
+      "address": {
+        "street": "j",
+        "city": "j",
+        "state": "h",
+        "country": "j",
+        "zipcode": "j"
+      }
+    }
+  ]
+}
