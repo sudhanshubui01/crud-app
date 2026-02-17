@@ -2,8 +2,8 @@ const employeesContainerEle = document.getElementById("employee-container");
 
 async function getAllEmployees() {
   try {
-    let res = await fetch(`http://localhost:5000/employee`);
-    let data = await res.json();
+    let resp = await fetch(`http://localhost:5000/employee`);
+    let data = await resp.json();
     console.log(data);
     displayEmployees(data);
   } catch (error) {
@@ -47,17 +47,17 @@ function displayEmployees(allEmployees) {
     ${emp.address.state},${emp.address.country} - ${emp.address.zipcode}   
 
     </p>
-
+</section>
     <footer class="emp-action">
     <button class="btn edit-btn" data-id="${emp.id}">Edit</button>
     <button class="btn delete-btn" data-id="${emp.id}">Delete</button>
     </footer>
-    </section>
+    
     `;
     // apply click event in deleteBTN
     const deleteBtn = empCard.querySelector(".delete-btn");
     deleteBtn.addEventListener("click", () => {
-      handleDelete(id);
+      handleDelete(emp.id);
     });
 
     const editBtn = empCard.querySelector(".edit-btn");
@@ -71,7 +71,7 @@ function displayEmployees(allEmployees) {
 async function handleDelete(id) {
   try {
     let resp = await fetch(
-      `https://crud-app-js-xw67.onrender.com/employees/${id}`,
+      `http://localhost:5000/employee/${id}`,
       { method: "DELETE" },
     );
 
@@ -90,4 +90,4 @@ async function handleDelete(id) {
 
 function handleEdit(id) {
   window.location.href = `EditEmployee.html?id=${id}`;
-}
+} 
