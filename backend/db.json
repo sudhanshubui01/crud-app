@@ -1,3 +1,38 @@
 {
-  "employee": []
+  "employee": [
+    {
+      "id": "71f1",
+      "firstname": "Ankit",
+      "middlename": "Kr",
+      "lastname": "Verma",
+      "dob": "2000-02-15",
+      "email": "ankit@gmail.com",
+      "maritalstatus": "Married",
+      "phoneno": "6307557090",
+      "address": {
+        "street": "Noida",
+        "city": "Noida",
+        "state": "UP",
+        "country": "India",
+        "zipcode": "277303"
+      }
+    },
+    {
+      "id": "db99",
+      "firstname": "Ankit",
+      "middlename": "Kr",
+      "lastname": "Verma",
+      "dob": "2000-02-15",
+      "email": "ankit@gmail.com",
+      "maritalstatus": "Married",
+      "phoneno": "6307557090",
+      "address": {
+        "street": "Noida",
+        "city": "Noida",
+        "state": "UP",
+        "country": "India",
+        "zipcode": "277303"
+      }
+    }
+  ]
 }
