@@ -64,9 +64,12 @@ employeeFormEle.addEventListener("submit", async (e) => {
     },
   };
 
+  console.log(updatedEmployeeData);
+  
+
   try {
     let resp = await fetch(
-      `https://crud-app-js-xw67.onrender.com/employees/${id}`,
+      `http://localhost:5000/employee/${id}`,
       {
         method: "PUT",
         headers: {
